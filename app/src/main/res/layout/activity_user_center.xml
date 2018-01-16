@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.softgarden.catchdolls.ui.userCenter.UserCenterActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvUser"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintDimensionRatio="490:230"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@mipmap/usercenter_bg"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivHeader"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@mipmap/def_header"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="1dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvName"
+                    style="@style/BlackText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="这是我的昵称" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvId"
+                    style="@style/BlackText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="ID:1234532" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvRecharge"
+                style="@style/ButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="8dp"
+                android:text="@string/recharge" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/llDolls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_radius_white_10dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvUser">
+
+        <LinearLayout
+            android:id="@+id/llMyDolls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/BlackText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/my_doll"
+                android:drawablePadding="6dp"
+                android:gravity="center_vertical"
+                android:text="@string/my_doll" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvDollNum"
+                style="@style/BlackText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="3dp"
+                android:drawableRight="@mipmap/pink_right_arrow"
+                android:gravity="center"
+                android:text="20" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llDolls">
+
+        <LinearLayout
+            android:id="@+id/llMyCoin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_radius_white_10dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="8dp"
+            android:paddingTop="10dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/BlackText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/my_coin"
+                android:drawablePadding="6dp"
+                android:gravity="center_vertical"
+                android:text="@string/my_coin" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvCoinNum"
+                style="@style/BlackText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="3dp"
+                android:drawableRight="@mipmap/pink_right_arrow"
+                android:gravity="center"
+                android:text="120" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvMyCoupon"
+            style="@style/UserItemStyle"
+            android:drawableLeft="@mipmap/my_coupon"
+            android:text="@string/my_coupon" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvMyInviteAwards"
+            style="@style/UserItemStyle"
+            android:drawableLeft="@mipmap/my_invite_awards"
+            android:text="@string/my_invite_awards" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

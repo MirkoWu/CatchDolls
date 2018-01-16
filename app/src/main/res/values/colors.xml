@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFF</color>
+    <color name="whiteLight">#F7F8FA</color>
+    <color name="whiteGray">#FFFAFB</color>
+    <color name="pink">#F4B6BB</color>
+    <color name="pink2">#F1CACD</color>
+    <color name="pink3">#FADBDD</color>
+    <color name="pinkLight">#F8E2E5</color>
+    <color name="pinkDark">#F67F8F</color>
+    <color name="black">#333333</color>
+    <color name="grayDark">#666666</color>
+    <color name="grayLight">#999999</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="orange">#FE7A2A</color>
+    <color name="yellow">#F7B574</color>
+    <color name="green">#0FD400</color>
+    <color name="blue">#0066FF</color>
+
+
+    <color name="pinkText">@color/pinkDark</color>
+    <color name="blueText">@color/blue</color>
+    <color name="blackText">@color/black</color>
+    <color name="grayDarkText">@color/grayDark</color>
+    <color name="grayLightText">@color/grayLight</color>
+    <color name="grayLine">@color/gray</color>
+
+
+</resources>

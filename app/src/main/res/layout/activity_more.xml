@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.softgarden.catchdolls.ui.more.MoreActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_radius_white_10dp"
+        android:divider="@drawable/shape_line_ver"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvMessage"
+            style="@style/MoreItemStyle"
+            android:drawableLeft="@mipmap/message"
+            android:text="@string/message" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvShareInvitationCode"
+            style="@style/MoreItemStyle"
+            android:drawableLeft="@mipmap/share"
+            android:text="@string/share_invitation_code" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_radius_white_10dp"
+        android:divider="@drawable/shape_line_ver"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvSetting"
+            style="@style/MoreItemStyle"
+            android:drawableLeft="@mipmap/setting"
+            android:text="@string/setting" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvOnLineService"
+            style="@style/MoreItemStyle"
+            android:drawableLeft="@mipmap/online_service"
+            android:text="@string/online_service" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvFeedback"
+            style="@style/MoreItemStyle"
+            android:drawableLeft="@mipmap/feedback"
+            android:text="@string/feedback" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvAboutApp"
+            style="@style/MoreItemStyle"
+            android:drawableLeft="@mipmap/about_app"
+            android:text="@string/about_app" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnUnLogin"
+        style="@style/BlackText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_radius_white_10dp"
+        android:padding="10dp"
+        android:text="@string/unLogin" />
+
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteLight"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@mipmap/coupon_bg"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        app:layout_constraintDimensionRatio="1035:444"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="323"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                style="@style/PinkText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_radius_white_2dp"
+                android:padding="5dp"
+                android:text="娃娃币"
+                android:textSize="@dimen/font_14" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvValue"
+                style="@style/WhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitle"
+                android:text="100"
+                android:textSize="@dimen/font_40" />
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/WhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="2dp"
+                android:text="此优惠券可直接兑换" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="121"
+            android:gravity="center_vertical"
+            android:paddingRight="20dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/GrayLightText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="有效期至2017-1-1" />
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/PinkText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立即兑换"
+                android:textSize="@dimen/font_14" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+def config = rootProject.ext.ver
+def library = rootProject.ext.library
+
+android {
+    compileSdkVersion config.compileSdkVersion
+    defaultConfig {
+        applicationId "com.softgarden.catchdolls"
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    implementation project(':baselibrary')
+    debugImplementation project(':baselibrary')
+    //可选
+    //annotationProcessor library.butterknife_compiler
+    implementation library.TabLayout
+    implementation library.okio
+    implementation library.okhttp
+    implementation library.okhttp_logging
+    implementation library.retrofit2
+    implementation library.retrofit2_gson
+    implementation library.retrofit2_adapter
+    implementation library.gson
+    implementation library.glide
+    implementation library.glide_okhttp3
+    implementation library.circleimageview
+    implementation library.PickerView
+
+}

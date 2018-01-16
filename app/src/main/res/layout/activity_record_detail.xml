@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.softgarden.catchdolls.ui.more.message.catchRecord.RecordDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_radius_white_10dp"
+        android:divider="@drawable/shape_line_ver"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <include
+            layout="@layout/item_my_dolls"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvWatchGameVideo"
+            style="@style/GrayDarkText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/gray_right_arrow"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingVertical="10dp"
+            android:text="@string/watch_game_video" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/GrayDarkText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/game_id" />
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/BlackText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="1" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_radius_white_10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/GrayDarkText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/can_report_when_hava_question"
+            android:textSize="@dimen/font_14" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvReport"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_radius_green_5dp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:text="@string/report" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

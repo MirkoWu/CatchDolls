@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteLight"
+    android:divider="@drawable/shape_line_ver"
+    android:orientation="vertical"
+    android:showDividers="middle|end"
+    tools:context="com.softgarden.catchdolls.ui.userCenter.userInfo.UserInfoActivity">
+
+    <LinearLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/BlackText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/header" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivHeader"
+            style="@style/GrayDarkText"
+            android:layout_width="50dp"
+            android:layout_height="65dp"
+            android:drawableRight="@mipmap/gray_right_arrow"
+            android:src="@mipmap/def_header" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/GrayDarkText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/gray_right_arrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llNickName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/BlackText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/nickname" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvNickName"
+            style="@style/GrayDarkText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/gray_right_arrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/BlackText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sex" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvSex"
+            style="@style/GrayDarkText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/gray_right_arrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/BlackText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sendAddress" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvAddress"
+            style="@style/GrayDarkText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/gray_right_arrow" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/card_top_radius_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context="com.softgarden.catchdolls.ui.login.LoginActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.85" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline"
+            app:layout_constraintRight_toRightOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/llStepOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/PinkText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/step_one" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edtPhone"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/shape_stroke1dp_pink_white_5dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/phone_num"
+                    android:inputType="phone"
+                    android:minHeight="40dp"
+                    android:paddingLeft="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shape_stroke1dp_pink_white_5dp"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/edtCode"
+                        style="@style/EditTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1.5dp"
+                        android:layout_weight="1"
+                        android:background="@color/whiteGray"
+                        android:gravity="center_vertical"
+                        android:hint="@string/verify_code"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvGetCode"
+                        style="@style/WhiteText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_right_radius_5dp"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/get_code"
+                        android:textSize="@dimen/font_15" />
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btnNext"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:minHeight="40dp"
+                    android:text="@string/next_step"
+                    android:textSize="@dimen/font_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llStepTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/PinkText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/set_new_pwd_hint" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/edtSetPwd"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_stroke1dp_pink_white_5dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/set_new_pwd"
+                        android:maxLength="6"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/cbShowPwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:button="@null"
+                        android:checked="false"
+                        android:drawableLeft="@drawable/select_pwd_show_hide"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/edtPwdAgain"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_stroke1dp_pink_white_5dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/ensure_new_pwd"
+                        android:maxLength="6"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/cbShowPwdAgain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:button="@null"
+                        android:checked="false"
+                        android:drawableLeft="@drawable/select_pwd_show_hide"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+
+                </FrameLayout>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btnFinish"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:minHeight="40dp"
+                    android:text="@string/finish"
+                    android:textSize="@dimen/font_16" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+

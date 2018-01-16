@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteLight"
+    android:divider="@drawable/shape_line_ver"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    tools:context="com.softgarden.catchdolls.ui.userCenter.userInfo.address.EditAddressActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/BlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rec_user_name" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edtName"
+            style="@style/BlackText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="right"
+            android:paddingRight="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/BlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contacts" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edtPhone"
+            style="@style/BlackText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="right"
+            android:inputType="number"
+            android:paddingRight="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/BlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/region" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvRegion"
+            style="@style/BlackText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="right"
+            android:paddingRight="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/BlackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_address" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edtDetailAddress"
+            style="@style/BlackText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="right"
+            android:paddingRight="15dp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape_radius_pink_5dp"
+        android:text="@string/save"
+        android:textSize="@dimen/font_16" />
+</LinearLayout>

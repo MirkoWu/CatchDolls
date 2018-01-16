@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:divider="@drawable/shape_line_ver"
+    android:orientation="vertical"
+    android:showDividers="middle|end"
+    tools:context="com.softgarden.catchdolls.ui.more.message.MessageActivity">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvChatMessage"
+        style="@style/MessageItemStyle"
+        android:drawableLeft="@drawable/shape_dot_chat_msg"
+        android:text="@string/chat_message" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvCatchRecord"
+        style="@style/MessageItemStyle"
+        android:drawableLeft="@drawable/shape_dot_catch_msg"
+        android:text="@string/catch_record" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvNoticeMessage"
+        style="@style/MessageItemStyle"
+        android:drawableLeft="@drawable/shape_dot_notice_msg"
+        android:text="@string/notice_message" />
+
+
+</LinearLayout>
